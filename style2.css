@@ -1,0 +1,133 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: 'Garamond', serif;
+    background-color: #271e1a;
+    color: #e6d6cf;
+    padding: 20px;
+  }
+  
+  #game {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #3e312b;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  #stats {
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .stat {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 24px;
+    color: #ffd700;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .stat strong {
+    color: #ffffff;
+  }
+  
+  #controls {
+    margin-bottom: 40px;
+  }
+  
+  #controls button {
+    padding: 20px 40px;
+    font-size: 20px;
+    background-color: #8b4513;
+    color: #ffffff;
+    border: 2px solid #4d2600;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  #controls button:hover {
+    background-color: #a0522d;
+  }
+  
+  #text {
+    padding: 40px;
+    background-color: #4e413b;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 1.6;
+    animation: slideIn 1s ease forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Styles for Monster Stats */
+  #monsterStats {
+    margin-bottom: 40px;
+  }
+  
+  #monsterStats .stat {
+    margin-right: 40px;
+    font-size: 24px;
+  }
+  
+  #monsterName {
+    color: #ff4500;
+    font-weight: bold;
+  }
+  
+  #monsterHealth {
+    color: #ff0000;
+  }
+  
+  /* Styles for responsive design */
+  @media (max-width: 768px) {
+    #game {
+      padding: 30px;
+    }
+  
+    #controls button {
+      margin-bottom: 30px;
+    }
+  
+    .stat,
+    #monsterStats .stat {
+      font-size: 20px;
+      margin-right: 30px;
+    }
+  
+    #text {
+      padding: 30px;
+      font-size: 18px;
+    }
+  }
+  
